@@ -134,32 +134,32 @@ def return_figures(df):
             x = time,
             y = df['actual_current_0'].tolist(),
             mode = 'lines',
-            name = 'base'),
+            name = 'Slide'),
         go.Scatter(
             x = time,
             y = df['actual_current_1'].tolist(),
             mode = 'lines',
-            name = 'shoulder'),
+            name = 'Lower'),
         go.Scatter(
             x = time,
             y = df['actual_current_2'].tolist(),
             mode = 'lines',
-            name = 'elbow'),
+            name = 'Upper'),
         go.Scatter(
             x = time,
             y = df['actual_current_3'].tolist(),
             mode = 'lines',
-            name = 'wrist_1'),
+            name = 'Rotation'),
         go.Scatter(
             x = time,
             y = df['actual_current_4'].tolist(),
             mode = 'lines',
-            name = 'wrist_2'),
+            name = 'Bend'),
         go.Scatter(
             x = time,
             y = df['actual_current_5'].tolist(),
             mode = 'lines',
-            name = 'wrist_3')
+            name = 'Twist')
       
        
         ])
@@ -178,32 +178,32 @@ def return_figures(df):
             x = time,
             y = df['actual_joint_voltage_0'].tolist(),
             mode = 'lines',
-            name = 'base'),
+            name = 'Slide'),
         go.Scatter(
             x = time,
             y = df['actual_joint_voltage_1'].tolist(),
             mode = 'lines',
-            name = 'shoulder'),
+            name = 'Lower'),
         go.Scatter(
             x = time,
             y = df['actual_joint_voltage_2'].tolist(),
             mode = 'lines',
-            name = 'elbow'),
+            name = 'Upper'),
         go.Scatter(
             x = time,
             y = df['actual_joint_voltage_3'].tolist(),
             mode = 'lines',
-            name = 'wrist_1'),
+            name = 'Rotation'),
         go.Scatter(
             x = time,
             y = df['actual_joint_voltage_4'].tolist(),
             mode = 'lines',
-            name = 'wrist_2'),
+            name = 'Bend'),
         go.Scatter(
             x = time,
             y = df['actual_joint_voltage_5'].tolist(),
             mode = 'lines',
-            name = 'wrist_3')
+            name = 'Twist')
       
        
     ])
@@ -222,32 +222,32 @@ def return_figures(df):
             x = time,
             y = df['joint_temperatures_0'].tolist(),
             mode = 'lines',
-            name = 'base'),
+            name = 'Slide'),
         go.Scatter(
             x = time,
             y = df['joint_temperatures_1'].tolist(),
             mode = 'lines',
-            name = 'shoulder'),
+            name = 'Lower'),
         go.Scatter(
             x = time,
             y = df['joint_temperatures_2'].tolist(),
             mode = 'lines',
-            name = 'elbow'),
+            name = 'Upper'),
         go.Scatter(
             x = time,
             y = df['joint_temperatures_3'].tolist(),
             mode = 'lines',
-            name = 'wrist_1'),
+            name = 'Rotation'),
         go.Scatter(
             x = time,
             y = df['joint_temperatures_4'].tolist(),
             mode = 'lines',
-            name = 'wrist_2'),
+            name = 'Bend'),
         go.Scatter(
             x = time,
             y = df['joint_temperatures_5'].tolist(),
             mode = 'lines',
-            name = 'wrist_3')  
+            name = 'Twist')  
     ])
 
     layout_three = dict(title = 'Graph of Joint Temperatures vs Time',
@@ -264,32 +264,32 @@ def return_figures(df):
             x = time,
             y = df['actual_qd_0'].tolist(),
             mode = 'lines',
-            name = 'base'),
+            name = 'Slide'),
         go.Scatter(
             x = time,
             y = df['actual_qd_1'].tolist(),
             mode = 'lines',
-            name = 'shoulder'),
+            name = 'Lower'),
         go.Scatter(
             x = time,
             y = df['actual_qd_2'].tolist(),
             mode = 'lines',
-            name = 'elbow'),
+            name = 'Upper'),
         go.Scatter(
             x = time,
             y = df['actual_qd_3'].tolist(),
             mode = 'lines',
-            name = 'wrist_1'),
+            name = 'Rotation'),
         go.Scatter(
             x = time,
             y = df['actual_qd_4'].tolist(),
             mode = 'lines',
-            name = 'wrist_2'),
+            name = 'Bend'),
         go.Scatter(
             x = time,
             y = df['actual_qd_5'].tolist(),
             mode = 'lines',
-            name = 'wrist_3')  
+            name = 'Twist')  
     ])
 
     layout_four = dict(title = 'Graph of Joint Velocities vs Time',
@@ -306,32 +306,32 @@ def return_figures(df):
             x = time,
             y = df['actual_qdd_0'].tolist(),
             mode = 'lines',
-            name = 'base'),
+            name = 'Slide'),
         go.Scatter(
             x = time,
             y = df['actual_qdd_1'].tolist(),
             mode = 'lines',
-            name = 'shoulder'),
+            name = 'Lower'),
         go.Scatter(
             x = time,
             y = df['actual_qdd_2'].tolist(),
             mode = 'lines',
-            name = 'elbow'),
+            name = 'Upper'),
         go.Scatter(
             x = time,
             y = df['actual_qdd_3'].tolist(),
             mode = 'lines',
-            name = 'wrist_1'),
+            name = 'Rotation'),
         go.Scatter(
             x = time,
             y = df['actual_qdd_4'].tolist(),
             mode = 'lines',
-            name = 'wrist_2'),
+            name = 'Bend'),
         go.Scatter(
             x = time,
             y = df['actual_qdd_5'].tolist(),
             mode = 'lines',
-            name = 'wrist_3')  
+            name = 'Twist')  
     ])
 
     layout_five = dict(title = 'Graph of Joint Accelerations vs Time',
